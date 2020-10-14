@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="Package1"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{38F10D34-D8DE-4E0E-8A3A-0CEC744B089B}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{358418A4-8298-4BD6-9577-5C2BC1223394}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -657,13 +657,13 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Sequence Container\Preparation SQL Task 1"
+          DTS:refId="Package\Sequence Container\Truncate Table Prep Task"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:DTSID="{80789C45-F550-41E7-A8D3-EA4FD9ABEAB8}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:FailPackageOnFailure="True"
           DTS:LocaleID="-1"
-          DTS:ObjectName="Preparation SQL Task 1"
+          DTS:ObjectName="Truncate Table Prep Task"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
           DTS:ThreadHint="0">
           <DTS:Variables />
@@ -679,7 +679,7 @@
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[{525F99C5-4204-411F-813A-5AC7B2ABEC8F\}]"
           DTS:CreationName=""
           DTS:DTSID="{525F99C5-4204-411F-813A-5AC7B2ABEC8F}"
-          DTS:From="Package\Sequence Container\Preparation SQL Task 1"
+          DTS:From="Package\Sequence Container\Truncate Table Prep Task"
           DTS:LogicalAnd="True"
           DTS:ObjectName="{525F99C5-4204-411F-813A-5AC7B2ABEC8F}"
           DTS:To="Package\Sequence Container\Data Flow Task 1" />
@@ -702,9 +702,13 @@
           Size="164,42"
           Id="Package\Sequence Container\Data Flow Task 1"
           TopLeft="53,106.5" />
+        <NodeLayout
+          Size="206,42"
+          Id="Package\Sequence Container\Truncate Table Prep Task"
+          TopLeft="36.5,4.5" />
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[{525F99C5-4204-411F-813A-5AC7B2ABEC8F\}]"
-          TopLeft="135,46.5">
+          TopLeft="137.25,46.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -724,15 +728,11 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="197,42"
-          Id="Package\Sequence Container\Preparation SQL Task 1"
-          TopLeft="36.5,4.5" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="320,204"
-          Size="320,246"
+          Size="320,247"
           Id="Package\Sequence Container"
           TopLeft="391,42" />
       </GraphLayout>
