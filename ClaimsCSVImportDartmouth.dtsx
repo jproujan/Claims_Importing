@@ -6,21 +6,21 @@
   DTS:CreatorComputerName="6MLQGH2"
   DTS:CreatorName="HEALTHPN\jproujansky"
   DTS:Description="DTS Wizard-generated package"
-  DTS:DTSID="{96355B61-AE94-4126-A724-9A41D057BC63}"
+  DTS:DTSID="{B82D00A2-1382-4D7A-B0E9-6E80A0A7D55D}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.94"
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="0"
-  DTS:ObjectName="Package1"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{358418A4-8298-4BD6-9577-5C2BC1223394}">
+  DTS:ObjectName="ClaimsCSVImportUSoMiss"
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{A274F57D-15E0-4632-9C2C-89DD3631AE06}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{76BA9BE5-174A-4981-9E30-264D74BE8273}"
+      DTS:DTSID="{895C9423-B0D1-48DD-9DC1-746663C383A2}"
       DTS:ObjectName="DestinationConnectionOLEDB">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -30,7 +30,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[SourceConnectionFlatFile]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{EDAA0116-E8E2-4556-B656-99DCF113B104}"
+      DTS:DTSID="{A3C9BEA8-94DA-43D6-AD7E-57A7AE4E66E0}"
       DTS:ObjectName="SourceConnectionFlatFile">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -40,7 +40,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="\\cronus\Z\Public\USERS\Sandi\UploadInvoice\Test of Univ of S Mississippi.csv">
+          DTS:ConnectionString="\\cronus\Z\Public\USERS\Sandi\UploadInvoice\Completed\Dartmouth 1674-2020-20201020T170100.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:MaximumWidth="100"
               DTS:DataType="129"
               DTS:ObjectName="Patient"
-              DTS:DTSID="{831C17A2-D934-4799-A69E-3E4D60C48410}"
+              DTS:DTSID="{CC257588-871C-4E1C-B440-4DBCDEEBE7FE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -56,7 +56,7 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:ObjectName="DOB"
-              DTS:DTSID="{8F3192FC-5A83-4034-8180-CF802630CBCD}"
+              DTS:DTSID="{C6F267CB-7E05-4655-99D8-47FACFF8A102}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -64,7 +64,7 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:ObjectName="PartID"
-              DTS:DTSID="{DB61041B-16CC-4A97-BC99-85CA8095DE08}"
+              DTS:DTSID="{3BF0E09B-3036-48F4-A88F-0BB0E84767F8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -72,7 +72,7 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:ObjectName="DOS"
-              DTS:DTSID="{BFECCBED-9D5E-464D-84A7-26C2DBB7E92E}"
+              DTS:DTSID="{F0E19AD7-ABAB-4122-A98E-E011C3E1CB8C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -80,7 +80,7 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:ObjectName="CPT"
-              DTS:DTSID="{C050EB14-F4BC-4EBC-9168-017C8F1F7937}"
+              DTS:DTSID="{EBA5C15E-84B0-454A-ADCA-F7B6B25FABB3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -89,7 +89,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DX"
-              DTS:DTSID="{5E867822-BE1B-41EF-9879-F7908E6F0A68}"
+              DTS:DTSID="{466220CE-4CB4-4960-831F-A6314C032530}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -97,15 +97,15 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:ObjectName="Charge"
-              DTS:DTSID="{D8C86502-53A2-4E23-8D13-51FFB924BD55}"
+              DTS:DTSID="{57FFB7C0-545C-41E1-8042-D119EB770D9E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="20"
               DTS:DataType="129"
               DTS:ObjectName="Column 7"
-              DTS:DTSID="{D6DBD331-5809-440E-BCC2-0298A61978E3}"
+              DTS:DTSID="{7F4DAC87-2709-4D17-B160-BE7C5F7894A8}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -118,7 +118,7 @@
       DTS:refId="Package\Sequence Container"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{6C673EA6-2D08-4E5F-89EF-51F6CB5973DB}"
+      DTS:DTSID="{8F6354FC-2D3F-4F63-AEB3-A388A75AAADB}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Sequence Container">
@@ -128,7 +128,7 @@
           DTS:refId="Package\Sequence Container\Data Flow Task 1"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:DelayValidation="True"
-          DTS:DTSID="{608F0C2F-ECB0-42CA-8AA9-731E1488621A}"
+          DTS:DTSID="{ACA1A191-A9B7-4084-A183-90D1DBF55EF3}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:FailPackageOnFailure="True"
           DTS:LocaleID="-1"
@@ -220,7 +220,7 @@
                           cachedLength="100"
                           cachedName="Patient"
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni.Inputs[Destination Input].ExternalColumns[Patient]"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[Patient]" />
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[Patient]" />
                         <inputColumn
                           refId="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni.Inputs[Destination Input].Columns[DOB]"
                           cachedCodepage="1252"
@@ -228,7 +228,7 @@
                           cachedLength="50"
                           cachedName="DOB"
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni.Inputs[Destination Input].ExternalColumns[DOB]"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[DOB]" />
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[DOB]" />
                         <inputColumn
                           refId="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni.Inputs[Destination Input].Columns[PartID]"
                           cachedCodepage="1252"
@@ -236,7 +236,7 @@
                           cachedLength="50"
                           cachedName="PartID"
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni.Inputs[Destination Input].ExternalColumns[PartID]"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[PartID]" />
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[PartID]" />
                         <inputColumn
                           refId="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni.Inputs[Destination Input].Columns[DOS]"
                           cachedCodepage="1252"
@@ -244,7 +244,7 @@
                           cachedLength="50"
                           cachedName="DOS"
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni.Inputs[Destination Input].ExternalColumns[DOS]"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[DOS]" />
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[DOS]" />
                         <inputColumn
                           refId="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni.Inputs[Destination Input].Columns[CPT]"
                           cachedCodepage="1252"
@@ -252,7 +252,7 @@
                           cachedLength="50"
                           cachedName="CPT"
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni.Inputs[Destination Input].ExternalColumns[CPT]"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[CPT]" />
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[CPT]" />
                         <inputColumn
                           refId="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni.Inputs[Destination Input].Columns[DX]"
                           cachedCodepage="1252"
@@ -260,7 +260,7 @@
                           cachedLength="50"
                           cachedName="DX"
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni.Inputs[Destination Input].ExternalColumns[DX]"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[DX]" />
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[DX]" />
                         <inputColumn
                           refId="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni.Inputs[Destination Input].Columns[Charge]"
                           cachedCodepage="1252"
@@ -268,15 +268,15 @@
                           cachedLength="50"
                           cachedName="Charge"
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni.Inputs[Destination Input].ExternalColumns[Charge]"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[Charge]" />
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[Charge]" />
                         <inputColumn
                           refId="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni.Inputs[Destination Input].Columns[Column 7]"
                           cachedCodepage="1252"
                           cachedDataType="str"
-                          cachedLength="50"
+                          cachedLength="20"
                           cachedName="Column 7"
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni.Inputs[Destination Input].ExternalColumns[Column7]"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[Column 7]" />
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[Column 7]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -357,12 +357,12 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv"
+                  refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth"
                   componentClassID="Microsoft.FlatFileSource"
                   contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                   description="Flat File Source"
                   localeId="1033"
-                  name="Source - Test of Univ of S Mississippi_csv"
+                  name="Source_Dartmouth"
                   usesDispositions="true"
                   version="1">
                   <properties>
@@ -377,25 +377,25 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Connections[FlatFileConnection]"
+                      refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Connections[FlatFileConnection]"
                       connectionManagerID="Package.ConnectionManagers[SourceConnectionFlatFile]"
                       connectionManagerRefId="Package.ConnectionManagers[SourceConnectionFlatFile]"
                       name="FlatFileConnection" />
                   </connections>
                   <outputs>
                     <output
-                      refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output]"
+                      refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output]"
                       name="Flat File Source Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[Patient]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[Patient]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="IgnoreFailure"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].ExternalColumns[Patient]"
+                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].ExternalColumns[Patient]"
                           length="100"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[Patient]"
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[Patient]"
                           name="Patient"
                           truncationRowDisposition="IgnoreFailure">
                           <properties>
@@ -410,14 +410,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[DOB]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[DOB]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="IgnoreFailure"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].ExternalColumns[DOB]"
+                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].ExternalColumns[DOB]"
                           length="50"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[DOB]"
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[DOB]"
                           name="DOB"
                           truncationRowDisposition="IgnoreFailure">
                           <properties>
@@ -432,14 +432,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[PartID]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[PartID]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="IgnoreFailure"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].ExternalColumns[PartID]"
+                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].ExternalColumns[PartID]"
                           length="50"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[PartID]"
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[PartID]"
                           name="PartID"
                           truncationRowDisposition="IgnoreFailure">
                           <properties>
@@ -454,14 +454,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[DOS]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[DOS]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="IgnoreFailure"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].ExternalColumns[DOS]"
+                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].ExternalColumns[DOS]"
                           length="50"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[DOS]"
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[DOS]"
                           name="DOS"
                           truncationRowDisposition="IgnoreFailure">
                           <properties>
@@ -476,14 +476,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[CPT]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[CPT]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="IgnoreFailure"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].ExternalColumns[CPT]"
+                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].ExternalColumns[CPT]"
                           length="50"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[CPT]"
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[CPT]"
                           name="CPT"
                           truncationRowDisposition="IgnoreFailure">
                           <properties>
@@ -498,14 +498,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[DX]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[DX]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="IgnoreFailure"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].ExternalColumns[DX]"
+                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].ExternalColumns[DX]"
                           length="50"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[DX]"
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[DX]"
                           name="DX"
                           truncationRowDisposition="IgnoreFailure">
                           <properties>
@@ -520,14 +520,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[Charge]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[Charge]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="IgnoreFailure"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].ExternalColumns[Charge]"
+                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].ExternalColumns[Charge]"
                           length="50"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[Charge]"
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[Charge]"
                           name="Charge"
                           truncationRowDisposition="IgnoreFailure">
                           <properties>
@@ -542,14 +542,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[Column 7]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[Column 7]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="IgnoreFailure"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].ExternalColumns[Column 7]"
-                          length="50"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].Columns[Column 7]"
+                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].ExternalColumns[Column 7]"
+                          length="20"
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].Columns[Column 7]"
                           name="Column 7"
                           truncationRowDisposition="IgnoreFailure">
                           <properties>
@@ -567,77 +567,77 @@
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].ExternalColumns[Patient]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].ExternalColumns[Patient]"
                           codePage="1252"
                           dataType="str"
                           length="100"
                           name="Patient" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].ExternalColumns[DOB]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].ExternalColumns[DOB]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="DOB" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].ExternalColumns[PartID]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].ExternalColumns[PartID]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="PartID" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].ExternalColumns[DOS]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].ExternalColumns[DOS]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="DOS" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].ExternalColumns[CPT]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].ExternalColumns[CPT]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="CPT" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].ExternalColumns[DX]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].ExternalColumns[DX]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="DX" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].ExternalColumns[Charge]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].ExternalColumns[Charge]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="Charge" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output].ExternalColumns[Column 7]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output].ExternalColumns[Column 7]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="20"
                           name="Column 7" />
                       </externalMetadataColumns>
                     </output>
                     <output
-                      refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Error Output]"
+                      refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Error Output]"
                       isErrorOut="true"
                       name="Flat File Source Error Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                           codePage="1252"
                           dataType="text"
                           description="Flat File Source Error Output Column"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                           name="Flat File Source Error Output Column" />
                         <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          refId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -651,7 +651,7 @@
                   refId="Package\Sequence Container\Data Flow Task 1.Paths[Flat File Source Output]"
                   endId="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni.Inputs[Destination Input]"
                   name="Flat File Source Output"
-                  startId="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv.Outputs[Flat File Source Output]" />
+                  startId="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth.Outputs[Flat File Source Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -659,7 +659,7 @@
         <DTS:Executable
           DTS:refId="Package\Sequence Container\Truncate Table Prep Task"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
-          DTS:DTSID="{80789C45-F550-41E7-A8D3-EA4FD9ABEAB8}"
+          DTS:DTSID="{B5A4DA04-CE5F-48A1-8AAF-4602AFC557BC}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:FailPackageOnFailure="True"
           DTS:LocaleID="-1"
@@ -669,19 +669,19 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{76BA9BE5-174A-4981-9E30-264D74BE8273}"
+              SQLTask:Connection="{895C9423-B0D1-48DD-9DC1-746663C383A2}"
               SQLTask:SqlStatementSource="Truncate TABLE [dbo].[ClaimsIni] " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
       <DTS:PrecedenceConstraints>
         <DTS:PrecedenceConstraint
-          DTS:refId="Package\Sequence Container.PrecedenceConstraints[{525F99C5-4204-411F-813A-5AC7B2ABEC8F\}]"
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[{0DE2A055-45AC-49CF-9FE6-2C8EC7312B52\}]"
           DTS:CreationName=""
-          DTS:DTSID="{525F99C5-4204-411F-813A-5AC7B2ABEC8F}"
+          DTS:DTSID="{0DE2A055-45AC-49CF-9FE6-2C8EC7312B52}"
           DTS:From="Package\Sequence Container\Truncate Table Prep Task"
           DTS:LogicalAnd="True"
-          DTS:ObjectName="{525F99C5-4204-411F-813A-5AC7B2ABEC8F}"
+          DTS:ObjectName="{0DE2A055-45AC-49CF-9FE6-2C8EC7312B52}"
           DTS:To="Package\Sequence Container\Data Flow Task 1" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
@@ -707,7 +707,7 @@
           Id="Package\Sequence Container\Truncate Table Prep Task"
           TopLeft="36.5,4.5" />
         <EdgeLayout
-          Id="Package\Sequence Container.PrecedenceConstraints[{525F99C5-4204-411F-813A-5AC7B2ABEC8F\}]"
+          Id="Package\Sequence Container.PrecedenceConstraints[{0DE2A055-45AC-49CF-9FE6-2C8EC7312B52\}]"
           TopLeft="137.25,46.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -744,27 +744,39 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="283,42"
-          Id="Package\Sequence Container\Data Flow Task 1\Source - Test of Univ of S Mississippi_csv"
-          TopLeft="5.5,5.5" />
-        <NodeLayout
           Size="189,42"
           Id="Package\Sequence Container\Data Flow Task 1\Destination - ClaimsIni"
           TopLeft="52.5,107.5" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Sequence Container\Data Flow Task 1\Source_Dartmouth"
+          TopLeft="6.5,5.5" />
         <EdgeLayout
           Id="Package\Sequence Container\Data Flow Task 1.Paths[Flat File Source Output]"
-          TopLeft="147,47.5">
+          TopLeft="92,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="55,60"
               Start="0,0"
-              End="0,52.5">
+              End="55,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
+                  <mssgle:LineSegment
+                    End="51,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51,30"
+                    Point2="55,30"
+                    Point3="55,34" />
+                  <mssgle:LineSegment
+                    End="55,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
