@@ -26,13 +26,13 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">6MLQGH2</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzU2cx9S3rUy+/9VXslVjrAAAAAACAAAAAAADZgAAwAAAABAAAAAKGCv+u7NBaeVEuCdYFRXyAAAAAASAAACgAAAAEAAAAEVkCzG2EuHJUIM72JDcpXaIAAAAmnVA6kDUwh0mv/mlw7zfQa/qb2Mv3EOwqZ4zzM/+U6uQ3E2qyEBgJjwtvy3/Ntm04HGKsPT+h9FCoNo6pbCwGsfbpBwmgViOO9oGR796KHDpHX3iNhMUBQVMxjDnSmpxjdku7LFM1CmG8OYWy/xa5nYy3a0+KSc7zJZOCzN29dOQNggGdCdgdxQAAABALI38lc9JXM2i4Nae3ntUqpAISg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzU2cx9S3rUy+/9VXslVjrAAAAAACAAAAAAADZgAAwAAAABAAAADVhjKgdDQz1vMtZdVa1dyRAAAAAASAAACgAAAAEAAAAKQRV4lHDd+Ps1Z0aInNND+IAAAACNcAJsf0Sfc9vhc5vR5oHrnsi2XqBcj2CezhkwaJwh8gR9akQhDw4T6cm07tLGF8BJk9m6JOHEwXJZPg8zDMWkyFEZGhE0U1tRlPldtiEajFZAY5Be71upZGj4UayTztEfJ3IxJvqPdByX2hoYdjg63HWd6pci4rsOTspoBq+QJkcvcJYduluhQAAACeXWLD08BpDZL4H/NIye66ve+P7Q==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="ClaimFmtCtoText.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="ClaimsCSVImportUSoMiss.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="ClaimsCSVImportDartmouth.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="ClaimsTabDelmImportDartmouth.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
@@ -700,16 +700,16 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="ClaimsCSVImportDartmouth.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="ClaimsTabDelmImportDartmouth.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{B82D00A2-1382-4D7A-B0E9-6E80A0A7D55D}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">ClaimsCSVImportUSoMiss</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{2879A0DC-37C7-4017-BD78-CA948529EFE5}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">ClaimsTabDelmImportDartmouth</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">10</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">15</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{B6065878-856B-40F1-88E5-90DA1ACFA3D4}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{400BF4B5-A635-4911-A381-EAE8709BEB59}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">DTS Wizard-generated package</SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
@@ -874,7 +874,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">true</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -904,7 +904,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\cronus\Z\Public\USERS\Sandi\UploadInvoice\Completed\Dartmouth 1674-2020-20201020T170100.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\cronus\Z\Public\USERS\Sandi\UploadInvoice\Completed\Dartmouth 1674-2020-20201020T170100.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -965,7 +965,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">1</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
